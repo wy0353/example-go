@@ -1,7 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
+
+
+func lenAndUpper(word string) (int, string) {
+	return len(word), strings.ToUpper(word)
+}
 
 func main() {
-	fmt.Println("Hello world")
+	len, _ := lenAndUpper("liner")
+
+	fmt.Println(len)
 }
